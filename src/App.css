@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.movie-container {
+  width: 340px;
+  height: min-content;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-poster {
+  height: 500px;
+  width: 340px;
+  object-fit: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-specs {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.movie-Rating {
+  font-size: 18px;
+}
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+  max-width: 75%;
+}
+.movie-summary {
+  margin-top: 8px;
+}
+body {
+  margin: 20px;
+  font-family: "poppins", sans-serif;
+}
+.movie-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.counter-container {
+  display: flex;
+  gap: 10px;
+}
+.likes-dislikes {
+  font-size: 20px;
+}
+.movie-show-button {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.add-color-form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-movie-form {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  font-size: 24px;
+  display: flex;
+  gap: 24px;
+  margin: 20px;
+}
+.not-found-image {
+  width: 100%;
+  object-fit: cover;
+}
+.not-found-container {
+  text-align: center;
+  color: teal;
+}
+
+.movie-detail-container {
+  padding: 24px;
+  max-width: 50rem;
 }
