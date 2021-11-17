@@ -58,7 +58,8 @@ export function TicTacToe() {
           <GameBox
             key={index}
             val={val}
-            onPlayerClick={() => handleClick(index)} />
+            onPlayerClick={() => handleClick(index)}
+          />
         ))}
       </div>
       {winner ? <h2>Winner is: {winner}</h2> : ""}
