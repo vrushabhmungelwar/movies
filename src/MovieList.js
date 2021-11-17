@@ -4,29 +4,47 @@ import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { useHistory } from "react-router-dom";
+// import Delete from "@mui/icons-material/Delete";
+import { useEffect, useState } from "react";
 
-export function MovieList({ movies, setMovies }) {
+export function MovieList() {
+  const [movies, setMovies] = useState([]);
+
+  const getMovies = () => {
+    fetch("https://6193e5f00b39a70017b15648.mockapi.io/movies")
+      .then((data) => data.json())
+      .then((mvs) => setMovies(mvs));
+  };
+  useEffect(getMovies, []);
+
+  const deleteMovie = (id) => {
+    fetch(`https://6193e5f00b39a70017b15648.mockapi.io/movies/${id}`, {
+      method: "DELETE",
+    }).then(() => getMovies());
+  };
+
   const history = useHistory();
   return (
     <section className="movie-list">
-      {movies.map(({ name, rating, summary, poster }, index) => (
+      {movies.map(({ name, rating, summary, poster, id }) => (
         <Movie
-          key={index}
+          key={id}
           name={name}
           rating={rating}
           summary={summary}
           poster={poster}
-          id={index}
+          id={id}
           deleteButton={
             <IconButton
-              // style={{ marginLeft: "auto" }}
-              onClick={() => {
-                const deleteIdx = index;
-                const remainingMovies = movies.filter(
-                  (mv, idx) => idx !== deleteIdx
-                );
-                setMovies(remainingMovies);
-              }}
+              style={{ marginLeft: "auto" }}
+              onClick={
+                () => deleteMovie(id)
+                // const deleteIdx = index;
+                // const remainingMovies = movies.filter(
+                //   (mv, idx) => idx !== deleteIdx
+                // );
+                // setMovies(remainingMovies);
+              }
               className="movie-show-button"
               aria-label="delete movie"
               color="error"
@@ -36,13 +54,13 @@ export function MovieList({ movies, setMovies }) {
           }
           editButton={
             <IconButton
-              style={{ marginLeft: "auto" }}
-              onClick={() => history.push("/movies/edit/" + index)}
+              // style={{ marginLeft: "auto" }}
+              onClick={() => history.push("/movies/edit/" + id)}
               className=""
               color="secondary"
               aria-label="edit movie"
             >
-              <EditIcon></EditIcon>
+              <EditIcon />
             </IconButton>
           }
         />

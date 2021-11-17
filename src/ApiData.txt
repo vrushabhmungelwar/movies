@@ -1,0 +1,88 @@
+[
+    {
+      id : "100",
+      name: "Interstellar",
+      poster:"https://i.pinimg.com/originals/d9/a0/a2/d9a0a223cc75b5a879f08f39878506a1.png",
+      rating: 8.6,
+      summary:"When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+      trailer: "https://www.youtube.com/embed/sOEg_YZQsTI",
+    },
+    {
+      id : "101",
+      name: "Arrival",
+      poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3zyMtbBhY2sssaMY_6It_Z3M-YFUHVoAmA&usqp=CAU",
+      rating: 7.9,
+      summary:"Louise Banks, a linguistics expert, along with her team, must interpret the language of aliens who have come to Earth in a mysterious spaceship.",
+      trailer: "",
+    },
+    {
+      id : "102",
+      name: "Free Guy",
+      poster: "https://cdn.wallpapersafari.com/51/70/zMxcIR.jpg",
+      rating: 7.2,
+      summary:"When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.",
+      trailer: "",    
+    },
+    {
+      id : "103",
+      name: "Tenet",
+      poster: "https://cdn.mos.cms.futurecdn.net/wJ4s9FFL6FdxAoKixtr4FS.jpg",
+      rating: 7.4,
+      summary:"When a few objects that can be manipulated and used as weapons in the future fall into the wrong hands, a CIA operative, known as the Protagonist, must save the world.",
+      trailer: "",
+    },
+    {
+      id : "104",
+      name: "Ready Player One",
+      poster:"https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_FMjpg_UX1000_.jpg",
+      rating: 7.4,
+      summary:"James Halliday designs a virtual reality and hides the keys to his fortune in it for a worthy player to find after his death. Wade, a teenager, sets out on a quest to find the keys and the fortune.",
+      trailer: "",   
+    },
+    {
+      id : "105",
+      name: "Alita battle angel",
+      poster:"https://i1.wp.com/nwasianweekly.com/wp-content/uploads/2019/02/MOVIES-Alita.jpg?resize=1100%2C576",
+      rating: 7.3,
+      summary:"Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.",
+      trailer: "https://www.youtube.com/embed/w7pYhpJaJW8",
+    },
+  ]
+
+
+
+[
+    {
+    "name": "Arrival",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3zyMtbBhY2sssaMY_6It_Z3M-YFUHVoAmA&usqp=CAU",
+    "rating": "7.9",
+    "summary": "Louise Banks, a linguistics expert, along with her team, must interpret the language of aliens who have come to Earth in a mysterious spaceship.",
+    "trailer": "https://www.youtube.com/embed/tFMo3UJ4B4g",
+    "id": "107"
+  },
+  {
+    "name": "Free Guy",
+    "poster": "https://cdn.wallpapersafari.com/51/70/zMxcIR.jpg",
+    "rating": "7.2",
+    "summary": "When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.",
+    "trailer": "https://www.youtube.com/embed/X2m-08cOAbc",
+    "id": "108"
+  },
+  {
+    "name": "Tenet",
+    "poster": "https://cdn.mos.cms.futurecdn.net/wJ4s9FFL6FdxAoKixtr4FS.jpg",
+    "rating": "7.4",
+    "summary": "When a few objects that can be manipulated and used as weapons in the future fall into the wrong hands, a CIA operative, known as the Protagonist, must save the world.",
+    "trailer": "https://www.youtube.com/embed/AZGcmvrTX9M",
+    "id": "109"
+  },
+  {
+    "name": "Ready Player One",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_FMjpg_UX1000_.jpg",
+    "rating": "7.4",
+    "summary": "James Halliday designs a virtual reality and hides the keys to his fortune in it for a worthy player to find after his death. Wade, a teenager, sets out on a quest to find the keys and the fortune.",
+    "trailer": "https://www.youtube.com/embed/cSp1dM2Vj48",
+    "id": "110"
+  }
+
+]
