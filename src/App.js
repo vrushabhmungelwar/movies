@@ -16,7 +16,7 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Paper from "@mui/material/Paper";
 import { BasicForm } from "./BasicForm";
-// import { TicTacToe } from "./TicTacToe";
+import { TicTacToe } from "./TicTacToe";
 export default function App() {
   console.log("Hi");
   // const initial_movies = [
@@ -110,13 +110,13 @@ export default function App() {
               >
                 Color game
               </Button>
-              {/* <Button
+              <Button
                 variant="text"
                 color="inherit"
                 onClick={() => history.push("/tic-tac-toe")}
               >
                 Tic-Tac-Toe Game
-              </Button> */}
+              </Button>
               <Button
                 variant="text"
                 color="inherit"
@@ -165,9 +165,9 @@ export default function App() {
             <Route path="/color-game">
               <AddColor />
             </Route>
-            {/* <Route path="/tic-tac-toe">
+            <Route path="/tic-tac-toe">
               <TicTacToe />
-            </Route> */}
+            </Route>
             <Route path="/form">
               <BasicForm />
             </Route>
