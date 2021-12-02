@@ -103,7 +103,7 @@ function UpdateMovie({ movie }) {
         onBlur={handleBlur}
         label="Rating"
         error={errors.rating && touched.rating}
-        helperText=      {errors.rating && touched.rating && errors.rating}
+        helperText={errors.rating && touched.rating && errors.rating}
         variant="standard"
       />
    

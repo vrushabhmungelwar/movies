@@ -68,6 +68,7 @@ export default function App() {
   //       "Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.",
   //   },
   // ];
+ 
   const history = useHistory();
   const [mode, setMode] = useState("dark");
   const theme = createTheme({

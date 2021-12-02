@@ -1,6 +1,9 @@
 import { useState } from "react";
 // import useWindowSize from "react-use/lib/useWindowSize";
 // import Confetti from "react-confetti";
+import { useHistory } from "react-router-dom";
+import IconButton from "@mui/material/IconButton";
+import ReplayIcon from "@mui/icons-material/Replay";
 import { GameBox } from "./GameBox";
 
 export function TicTacToe() {
@@ -50,6 +53,8 @@ export function TicTacToe() {
       setIsXTurn(!isXTurn);
     }
   };
+  const history = useHistory();
+
   return (
     <div className="full-game">
       {/* {winner ? <Confetti width={width} height={height} gravity={0.03} /> : ""} */}
@@ -63,6 +68,9 @@ export function TicTacToe() {
         ))}
       </div>
       {winner ? <h2>Winner is: {winner}</h2> : ""}
+      <IconButton onClick={() => history.go(0)}>
+        <ReplayIcon fontSize="large" />
+      </IconButton>
     </div>
   );
 }
