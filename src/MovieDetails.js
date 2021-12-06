@@ -29,9 +29,9 @@ export function MovieDetails() {
         height="530"
         src={movie.trailer}
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <div className="movie-detail-container">
         <div className="movie-specs">
