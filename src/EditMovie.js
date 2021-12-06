@@ -4,6 +4,7 @@ import TextField from "@mui/material/TextField";
 import { useParams,useHistory } from "react-router-dom";
 import { useFormik } from "formik";
 import { formValidationSchema } from "./AddMovie";
+import { API_URL } from "./global-constants";
 
 export function EditMovie() {
   // const history = useHistory();
@@ -12,7 +13,7 @@ export function EditMovie() {
 
   const [movie, setMovie] = useState(null);
   useEffect(() => {
-    fetch(`https://6193e5f00b39a70017b15648.mockapi.io/movies/${id}`, {
+    fetch(`${API_URL}/movies/${id}`, {
       method: "GET",
     })
       .then((data) => data.json())
@@ -61,7 +62,7 @@ function UpdateMovie({ movie }) {
     // copyMovieList[id] = updatedMovie;
     // setMovies(copyMovieList);
     // history.push("/movies");
-    fetch(`https://6193e5f00b39a70017b15648.mockapi.io/movies/${movie.id}`, {
+    fetch(`${API_URL}/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(updatedMovie),
       headers: {

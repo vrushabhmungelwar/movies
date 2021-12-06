@@ -6,9 +6,8 @@ import EditIcon from "@mui/icons-material/Edit";
 import { useHistory } from "react-router-dom";
 // import Delete from "@mui/icons-material/Delete";
 import { useEffect, useState } from "react";
+import { API_URL } from "./global-constants";
 
-// const API_URL = "https://6193e5f00b39a70017b15648.mockapi.io/movies"
-const API_URL = "https://moviesbyvrushabh.herokuapp.com"
 
 
 export function MovieList() {
@@ -30,19 +29,19 @@ export function MovieList() {
   const history = useHistory();
   return (
     <section className="movie-list">
-      {movies.map(({ name, rating, summary, poster, id }) => (
+      {movies.map(({ name, rating, summary, poster, id, _id }) => (
         <Movie
-          key={id}
+          key={_id}
           name={name}
           rating={rating}
           summary={summary}
           poster={poster}
-          id={id}
+          id={_id}
           deleteButton={
             <IconButton
               style={{ marginLeft: "auto" }}
               onClick={
-                () => deleteMovie(id)
+                () => deleteMovie(_id)
                 // const deleteIdx = index;
                 // const remainingMovies = movies.filter(
                 //   (mv, idx) => idx !== deleteIdx
@@ -59,7 +58,7 @@ export function MovieList() {
           editButton={
             <IconButton
               // style={{ marginLeft: "auto" }}
-              onClick={() => history.push("/movies/edit/" + id)}
+              onClick={() => history.push("/movies/edit/" + _id)}
               className=""
               color="secondary"
               aria-label="edit movie"
