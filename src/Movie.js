@@ -70,3 +70,36 @@ export function Movie({
     </Card>
   );
 }
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import './style.css';
+
+// const Parent = () => {
+//   const [value, setValue] = useState(0);
+
+//   return (
+//     <div>
+//       {`${value} times clicked`}
+//       <br />
+//       <br />
+//       <Child value={value} setValue = {setValue} />
+//     </div>
+//   );
+// };
+
+// const Child = ({value , setValue}) => {
+//   return (<button onClick = {()=> {
+//     setValue(value+1)}
+//   }>Click</button>);
+// };
+
+// export default Parent;
