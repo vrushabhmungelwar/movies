@@ -149,7 +149,7 @@ export default function App() {
         <Link to="/color-game">Color game</Link>
       </nav> */}
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/*">
               <Welcome />
             </Route>
             <Route path="/films">
